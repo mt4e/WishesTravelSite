@@ -1,0 +1,18 @@
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  
+    <label>
+      User Name:
+      <input type="text" formControlName="userName">
+    </label>
+  
+    <label>
+      password:
+      <input type="password" formControlName="password">
+    </label>
+
+    <div class="form-group">
+      <button class="btn btn-primary">Log in</button>
+  </div>
+
+  </form>
+  <a routerLink="/home">Home map</a>
